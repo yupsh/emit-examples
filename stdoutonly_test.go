@@ -1,16 +1,15 @@
 package emit_test
 
 import (
-	emit "github.com/yupsh/emit"
-	yup "github.com/gloo-foo/framework"
+	gloo "github.com/gloo-foo/framework"
+	"github.com/yupsh/emit"
 )
 
 func ExampleEmit_stdoutOnly() {
 	// emit only to stdout
-	yup.MustRun(
+	gloo.MustRun(
 		emit.Emit("stdout only", ""),
 	)
 	// Output:
 	// stdout only
 }
-

@@ -1,16 +1,15 @@
 package emit_test
 
 import (
-	emit "github.com/yupsh/emit"
-	yup "github.com/gloo-foo/framework"
+	gloo "github.com/gloo-foo/framework"
+	"github.com/yupsh/emit"
 )
 
 func ExampleEmit_basic() {
 	// emit "Hello" to stdout and "Warning" to stderr
-	yup.MustRun(
+	gloo.MustRun(
 		emit.Emit("Hello", "Warning"),
 	)
 	// Output:
 	// Hello
 }
-
